@@ -1,0 +1,17 @@
+>aws ecr create-repository --repository-name moveon-docker-images
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:eu-central-1:512130693637:repository/moveon-docker-images",
+        "registryId": "512130693637",
+        "repositoryName": "moveon-docker-images",
+        "repositoryUri": "512130693637.dkr.ecr.eu-central-1.amazonaws.com/moveon-docker-images",
+        "createdAt": "2025-02-03T23:52:22.079000+02:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
