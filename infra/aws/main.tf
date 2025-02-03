@@ -41,7 +41,7 @@ resource "aws_ecs_task_definition" "orchard_task" {
   network_mode             = "awsvpc"
   cpu                      = "512"
   memory                   = "1024"
-  execution_role_arn       = "arn:aws:iam::your-account-id:role/ecsTaskExecutionRole"
+  execution_role_arn       = "arn:aws:iam::512130693637:role/ecsTaskExecutionRole-cust"
 
   container_definitions = jsonencode([
     {
