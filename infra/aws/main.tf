@@ -45,8 +45,8 @@ resource "aws_ecs_task_definition" "orchard_task" {
 
   container_definitions = jsonencode([
     {
-      name      = "orchardcms"
-      image     = "your-docker-image-url"
+      name      = "moveoncms"
+      image     = "512130693637.dkr.ecr.eu-central-1.amazonaws.com/moveon:latest"
       essential = true
       portMappings = [
         {
@@ -65,7 +65,7 @@ resource "aws_ecs_service" "orchard_service" {
   launch_type     = "FARGATE"
 
   network_configuration {
-    subnets          = ["subnet-12345678"]  # Replace with actual subnet IDs
+    subnets          = ["subnet-09aa9e6e9e0cdecd9"]  # Replace with actual subnet IDs
     security_groups  = [aws_security_group.orchard_sg.id]
     assign_public_ip = true
   }
